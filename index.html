@@ -37,13 +37,18 @@
                     <li class="nav"><a href="#about">About</a></li>
                     <li class="nav"><a href="#skills">Skills</a></li>
                     <li class="nav"><a href="#projects">Projects</a></li>
+                    <li class="nav"><a href="#gallery">Gallery</a></li>
+                    <li class="nav"><a href="#blog">Blog</a></li>
+                    <li class="nav"><a href="#testimonials">Testimonials</a></li>
+                    <li class="nav"><a href="#certifications">Certifications</a></li>
                     <li class="nav"><a href="#contact">Contact</a></li>
+                    <li class="nav"><button id="theme-toggle">🌙</button></li>
                     <i class="fas fa-times" id="menu-close"></i>
                 </ul>
             </nav>
 
             <div class="header-text">
-                <h1>Hi, I am <span>Jash</span></h1>
+                <h1 id="intro-text">Hi, I am <span>Jash</span></h1>
                 <h2 class="sub-heading">Software Developer | AI Enthusiast</h2>
             </div>
         </div>
@@ -80,40 +85,57 @@
         </div>
     </div>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with GitHub API -->
     <div id="projects">
         <div class="container">
             <h1 class="sub-title2">Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/university-nav.png">
-                    <div class="layer">
-                        <h3>University Navigation App</h3>
-                        <p>Java-based application using JavaFX and graph algorithms to optimize navigation on campus.</p>
-                        <a href="https://github.com/jashkad8967/navigation-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/jpmorgan.png">
-                    <div class="layer">
-                        <h3>J.P. Morgan Job Simulation</h3>
-                        <p>Fixed broken files and built a data visualization web app using JPMorgan Chase's Perspective library.</p>
-                        <a href="https://github.com/jashkad8967/jpmorgan-simulation" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/ai-support.png">
-                    <div class="layer">
-                        <h3>AI Customer Support & RateMyProfessor</h3>
-                        <p>AI-powered apps built using React, Next.js, and AWS for enhancing customer experiences.</p>
-                        <a href="https://github.com/jashkad8967/ai-projects" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+            <div class="work-list" id="project-list">
+                <!-- Dynamic project cards will be injected here by JS -->
             </div>
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Gallery Section -->
+    <div id="gallery">
+        <div class="container">
+            <h1 class="sub-title2">Project Gallery</h1>
+            <div class="gallery-list" id="gallery-list">
+                <!-- Dynamic gallery images here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title2">Blog & Articles</h1>
+            <div class="blog-list" id="blog-list">
+                <!-- Blog posts will be dynamically injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials">
+        <div class="container">
+            <h1 class="sub-title2">Testimonials</h1>
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <!-- User feedback dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title2">Certifications</h1>
+            <div class="certifications-list" id="certifications-list">
+                <!-- Certifications with download links -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section with Form API -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -127,10 +149,10 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <form id="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
