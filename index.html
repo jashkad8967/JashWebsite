@@ -1,175 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jash Kadakia</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    
-    <!-- Font and Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
-    <script src="https://kit.fontawesome.com/2555edefcc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Jash Kadakia - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo" onclick="window.location.href='#header'">
-                <i class="fa-solid fa-bars" id="menu-toggle"></i>
-                <ul id="nav-menu">
-                    <li class="nav"><a href="#header">Home</a></li>
-                    <li class="nav"><a href="#about">About</a></li>
-                    <li class="nav"><a href="#skills">Skills</a></li>
-                    <li class="nav"><a href="#projects">Projects</a></li>
-                    <li class="nav"><a href="#gallery">Gallery</a></li>
-                    <li class="nav"><a href="#blog">Blog</a></li>
-                    <li class="nav"><a href="#testimonials">Testimonials</a></li>
-                    <li class="nav"><a href="#certifications">Certifications</a></li>
-                    <li class="nav"><a href="#contact">Contact</a></li>
-                    <li class="nav"><button id="theme-toggle">🌙</button></li>
-                    <i class="fas fa-times" id="menu-close"></i>
-                </ul>
-            </nav>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="header-text">
-                <h1 id="intro-text">Hi, I am <span>Jash</span></h1>
-                <h2 class="sub-heading">Software Developer | AI Enthusiast</h2>
-            </div>
-        </div>
-    </div>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1 id="special-name">Jash Kadakia</h1>
+        <p>Computer Science & Data Science Student at UW-Madison</p>
+    </section>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/profileImage.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title" data-aos="fade-right">About Me</h1>
-                    <p class="about-text">I am Jash Kadakia, a Computer Science and Data Science student at the University of Wisconsin-Madison, graduating in December 2025. I am passionate about building software solutions, working on AI projects, and exploring innovations in machine learning. I have hands-on experience with multiple programming languages and frameworks and am eager to make a positive impact through technology.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Passionate Computer Science and Data Science student at the University of Wisconsin-Madison, graduating in December 2025. Eager to learn and grow through internships and hands-on experiences.</p>
+    </section>
 
     <!-- Skills Section -->
-    <div id="skills">
-        <div class="container">
-            <h1 class="sub-title2">Skills</h1>
-            <div class="skill-row">
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-java-plain"></i><p class="skill-text">Java</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-python-plain"></i><p class="skill-text">Python</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-html5-plain"></i><p class="skill-text">HTML</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-css3-plain"></i><p class="skill-text">CSS</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-javascript-plain"></i><p class="skill-text">JavaScript</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-git-plain"></i><p class="skill-text">Git</p></div>
-                <div class="box" data-aos="zoom-in"><i class="devi devicon-amazonwebservices-plain"></i><p class="skill-text">AWS</p></div>
-            </div>
-        </div>
-    </div>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java, Python, R, C, ASM</li>
+            <li>React, HTML, CSS, JavaScript</li>
+            <li>AWS (EC2, ECS, Route 53)</li>
+            <li>Git, SQL, UI Development</li>
+        </ul>
+    </section>
 
-    <!-- Projects Section with GitHub API -->
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title2">Projects</h1>
-            <div class="work-list" id="project-list">
-                <!-- Dynamic project cards will be injected here by JS -->
-            </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>University of Wisconsin-Madison Navigation App</h3>
+            <p>Built with Java and JavaFX to create an accessible campus navigation tool.</p>
         </div>
-    </div>
+        <div class="project">
+            <h3>J.P. Morgan Software Engineering Job Simulation</h3>
+            <p>Set up a local dev environment and fixed broken files to display a live graph using JPMorgan Chase’s open-source library.</p>
+        </div>
+    </section>
 
-    <!-- Gallery Section -->
-    <div id="gallery">
-        <div class="container">
-            <h1 class="sub-title2">Project Gallery</h1>
-            <div class="gallery-list" id="gallery-list">
-                <!-- Dynamic gallery images here -->
-            </div>
-        </div>
-    </div>
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <!-- Blog Section -->
-    <div id="blog">
-        <div class="container">
-            <h1 class="sub-title2">Blog & Articles</h1>
-            <div class="blog-list" id="blog-list">
-                <!-- Blog posts will be dynamically injected here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <div id="testimonials">
-        <div class="container">
-            <h1 class="sub-title2">Testimonials</h1>
-            <div class="testimonial-carousel" id="testimonial-carousel">
-                <!-- User feedback dynamically generated here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Certifications Section -->
-    <div id="certifications">
-        <div class="container">
-            <h1 class="sub-title2">Certifications</h1>
-            <div class="certifications-list" id="certifications-list">
-                <!-- Certifications with download links -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section with Form API -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p class="contact-text">I am always open to new opportunities and collaborations. Reach out for any projects or just to say hi!</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jash-kadakia-jk89672705"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/jashkad8967"><i class="fa-brands fa-github"></i></a>
-                        <a href="mailto:jashkad8967@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form id="contact-form">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Send Message</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Made by Jash Kadakia | &copy; 2025</p>
-        </div>
-    </div>
-
-    <!-- JavaScript -->
-    <script>
-        AOS.init();
-    </script>
     <script src="js/scripts.js"></script>
-
 </body>
-
 </html>
