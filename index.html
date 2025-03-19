@@ -1,63 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jash Kadakia | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jash Kadakia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Font and Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/2555edefcc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Jash Kadakia</h1>
-        <p>Computer Science & Data Science Student | Software Developer</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate student at the University of Wisconsin-Madison majoring in Computer Science and Data Science. Seeking to create impactful projects through internships and learning experiences.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>University Navigation App:</strong> Java-based app using JavaFX and algorithms for location-based accessibility.
-            </li>
-            <li>
-                <strong>J.P. Morgan Job Simulation:</strong> Web application utilizing JPMorgan Chase’s Perspective library for live data visualization.
-            </li>
-            <li>
-                <strong>AI Customer Support & RateMyProfessor:</strong> Built using React, Next.js, and AWS during my Software Engineering Fellowship.
-            </li>
-        </ul>
-    </section>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" onclick="window.location.href='#header'">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                <ul id="nav-menu">
+                    <li class="nav"><a href="#header">Home</a></li>
+                    <li class="nav"><a href="#about">About</a></li>
+                    <li class="nav"><a href="#skills">Skills</a></li>
+                    <li class="nav"><a href="#projects">Projects</a></li>
+                    <li class="nav"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" id="menu-close"></i>
+                </ul>
+            </nav>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Proficient in Java, Python, R, ASM, C, AWS, Git, and frontend development (HTML, CSS). Experienced with building APIs, UI/UX development, and working with cloud services.</p>
-    </section>
+            <div class="header-text">
+                <h1>Hi, I am <span>Jash</span></h1>
+                <h2 class="sub-heading">Software Developer | AI Enthusiast</h2>
+            </div>
+        </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:jashkad8967@gmail.com">jashkad8967@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/jashkad8967" target="_blank">github.com/jashkad8967</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jash-kadakia-jk89672705" target="_blank">linkedin.com/in/jash-kadakia-jk89672705</a></p>
-    </section>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profileImage.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" data-aos="fade-right">About Me</h1>
+                    <p class="about-text">I am Jash Kadakia, a Computer Science and Data Science student at the University of Wisconsin-Madison, graduating in December 2025. I am passionate about building software solutions, working on AI projects, and exploring innovations in machine learning. I have hands-on experience with multiple programming languages and frameworks and am eager to make a positive impact through technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Jash Kadakia | All Rights Reserved</p>
-        <button id="backToTop">Back to Top</button>
-    </footer>
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title2">Skills</h1>
+            <div class="skill-row">
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-java-plain"></i><p class="skill-text">Java</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-python-plain"></i><p class="skill-text">Python</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-html5-plain"></i><p class="skill-text">HTML</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-css3-plain"></i><p class="skill-text">CSS</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-javascript-plain"></i><p class="skill-text">JavaScript</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-git-plain"></i><p class="skill-text">Git</p></div>
+                <div class="box" data-aos="zoom-in"><i class="devi devicon-amazonwebservices-plain"></i><p class="skill-text">AWS</p></div>
+            </div>
+        </div>
+    </div>
 
-    <script src="scripts.js"></script>
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title2">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/university-nav.png">
+                    <div class="layer">
+                        <h3>University Navigation App</h3>
+                        <p>Java-based application using JavaFX and graph algorithms to optimize navigation on campus.</p>
+                        <a href="https://github.com/jashkad8967/navigation-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/jpmorgan.png">
+                    <div class="layer">
+                        <h3>J.P. Morgan Job Simulation</h3>
+                        <p>Fixed broken files and built a data visualization web app using JPMorgan Chase's Perspective library.</p>
+                        <a href="https://github.com/jashkad8967/jpmorgan-simulation" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ai-support.png">
+                    <div class="layer">
+                        <h3>AI Customer Support & RateMyProfessor</h3>
+                        <p>AI-powered apps built using React, Next.js, and AWS for enhancing customer experiences.</p>
+                        <a href="https://github.com/jashkad8967/ai-projects" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="contact-text">I am always open to new opportunities and collaborations. Reach out for any projects or just to say hi!</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jash-kadakia-jk89672705"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jashkad8967"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:jashkad8967@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made by Jash Kadakia | &copy; 2025</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scripts.js"></script>
+
 </body>
+
 </html>
