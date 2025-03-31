@@ -88,6 +88,7 @@ nav a:hover {
     text-align: center;
     position: relative;
     color: #f8fdfd;
+    padding-top: 200px; 
 }
 
 @media screen and (max-width: 768px) {
