@@ -52,28 +52,7 @@ header {
     text-align: center;
     position: relative;
     color: #f8fdfd;
-    padding-top: 80px; /* Space for header size */
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        height: 60px; 
-    }
-
-    #home {
-        padding-top: 60px; 
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-right: 0; 
-        margin-top: 20px;
-    }
-
-    nav a {
-        font-size: 1.2rem; 
-    }
+    padding-top: 80px; 
 }
 
 /* Navigation Styles */
@@ -97,6 +76,26 @@ nav a:hover {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px; 
+    }
+
+    #home {
+        padding-top: 60px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0; 
+        margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 1.2rem; 
+    }
+}
 
 /* Section Base Styles */
 .section {
