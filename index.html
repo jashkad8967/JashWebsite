@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jash Kadakia - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
 </head>
 <body>
     <!-- Header Section -->
     <header>
+        <div class="header-left">
+            <span id="special-j">J</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,39 +26,94 @@
 
     <!-- Home Section -->
     <section id="home" class="section">
-        <h1 id="special-name">Jash Kadakia</h1>
-        <p>Computer Science & Data Science Student at UW-Madison</p>
+        <div class="home-container">
+            <h1 id="special-name">Jash Kadakia</h1>
+            <p>Computer Science & Data Science Student at UW-Madison</p>
+        </div>
     </section>
+    
 
     <!-- About Me Section -->
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Passionate Computer Science and Data Science student at the University of Wisconsin-Madison, graduating in December 2025. Eager to learn and grow through internships and hands-on experiences.</p>
+        <div class="about-image">
+            <img src="img/profile.jpg" alt="Jash Kadakia">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Passionate Computer Science and Data Science student at the University of Wisconsin-Madison, graduating in December 2025. Eager to learn and grow through internships and hands-on experiences.</p>
+        </div>
     </section>
 
+
     <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java, Python, R, C, ASM</li>
-            <li>React, HTML, CSS, JavaScript</li>
-            <li>AWS (EC2, ECS, Route 53)</li>
-            <li>Git, SQL, UI Development</li>
-        </ul>
+<section id="skills" class="section">
+    <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-r-project"></i>
+                <p>R</p>
+            </div>
+            <div class="skill-box">
+                <i class="fas fa-code"></i>
+                <p>C</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-aws"></i>
+                <p>AWS</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-github"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-box">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+        </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>University of Wisconsin-Madison Navigation App</h3>
-            <p>Built with Java and JavaFX to create an accessible campus navigation tool.</p>
-        </div>
-        <div class="project">
-            <h3>J.P. Morgan Software Engineering Job Simulation</h3>
-            <p>Set up a local dev environment and fixed broken files to display a live graph using JPMorgan Chase’s open-source library.</p>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="img/github-project1.jpg" alt="Project 1 Thumbnail">
+                <h3 class="project-title">University Navigation App</h3>
+                <a href="https://github.com/jashkad8967/UWMadison-Navigation-App" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-box">
+                <img src="img/github-project2.jpg" alt="Portfolio Website Thumbnail">
+                <h3 class="project-title">Portfolio Website (GitHub)</h3>
+                <a href="https://github.com/jashkad8967/JashWebsite" target="_blank" class="project-link">View Project</a>
+            </div>
         </div>
     </section>
+    
 
     <!-- Contact Me Section -->
     <section id="contact" class="section">
