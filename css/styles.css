@@ -91,6 +91,12 @@ nav a:hover {
     padding-top: 200px; 
 }
 
+@media screen and (max-width: 768px) {
+    #home {
+        padding-top: 120px; 
+    }
+}
+
 #home::before {
     content: "";
     position: absolute;
