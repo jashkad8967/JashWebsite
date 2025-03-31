@@ -20,6 +20,7 @@ header {
     align-items: center;
     padding: 0px 0px;
     margin-left: 0px;
+    height: 80px; 
 }
 
 .header-left {
@@ -38,6 +39,41 @@ header {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     color: #fff;
+}
+
+#home {
+    background-image: url('../img/home-background.jpg'); 
+    background-size: contain; 
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #f8fdfd;
+    padding-top: 80px; /* Space for header size */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px; 
+    }
+
+    #home {
+        padding-top: 60px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0; 
+        margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 1.2rem; 
+    }
 }
 
 /* Navigation Styles */
@@ -88,13 +124,7 @@ nav a:hover {
     text-align: center;
     position: relative;
     color: #f8fdfd;
-    padding-top: 200px; 
-}
-
-@media screen and (max-width: 768px) {
-    #home {
-        padding-top: 750px; 
-    }
+    padding-top: 200px;
 }
 
 #home::before {
