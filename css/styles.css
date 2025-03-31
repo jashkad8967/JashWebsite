@@ -81,7 +81,7 @@ nav a:hover {
     background-image: url('../img/home-background.jpg'); 
     background-size: contain; 
     background-position: center;
-    height: 100vh;
+    height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,4 +296,114 @@ form.visible {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    /* Adjust header layout */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #special-j {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .header-name {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    /* Section Base Styles */
+    .section {
+        padding: 60px 10px;
+    }
+
+    /* Home Section */
+    #home {
+        height: auto;
+        padding: 60px 10px;
+    }
+
+    #special-name {
+        font-size: 2rem;
+    }
+
+    /* About Me Section */
+    #about {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    #about .about-image,
+    #about .about-text {
+        width: 100%;
+    }
+
+    /* Skills Section */
+    #skills {
+        padding: 30px 10px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .skill-box {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .skill-box i {
+        font-size: 2.5rem;
+    }
+
+    .skill-box p {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 30px 10px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 30px 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
