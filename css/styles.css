@@ -312,3 +312,86 @@ form.visible {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0 0 0;
+    }
+
+    #special-j {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 60px 10px;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-image, 
+    #about .about-text {
+        width: 100%;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .skill-box i {
+        font-size: 2.2rem;
+    }
+
+    /* Projects Section */
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Typography scaling */
+    h1, h2, h3, p, a {
+        font-size: 90%;
+    }
+
+    #special-name {
+        font-size: 2.2rem;
+    }
+
+    /* Contact Form */
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
